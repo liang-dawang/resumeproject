@@ -1,0 +1,27 @@
+# C:\Users\33395\Desktop\66666\new-carre\src\test\resources\application.yml
+spring:
+  ai:
+    chat:
+      client:
+        enabled: true
+    dashscope:
+      api-key: sk-110d392e206d497f909d49284f0527dd
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.1
+      embedding:
+        model: text-embedding-v2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/new_career_platfrom
+    username: postgres
+    password: postgres123
+    driver-class-name: org.postgresql.Driver
+  mybatis-plus:
+    configuration:
+      map-underscore-to-camel-case: true
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.example.newcarre: DEBUG

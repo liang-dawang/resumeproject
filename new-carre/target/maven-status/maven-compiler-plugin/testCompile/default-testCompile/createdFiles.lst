@@ -1,0 +1,4 @@
+org\example\newcarre\mapper\UserInfoMapperTest.class
+org\example\newcarre\MybatisFlexTestApplicationTests.class
+org\example\newcarre\NewCarreApplicationTests.class
+org\example\newcarre\service\JobProfileOrchestratorTest.class

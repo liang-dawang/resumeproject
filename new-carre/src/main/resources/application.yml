@@ -1,0 +1,26 @@
+spring:
+  ai:
+    dashscope:
+      api-key: sk-110d392e206d497f909d49284f0527dd
+      chat:
+        client:
+          enabled: true
+        options:
+          model: qwen-plus # 推荐直接使用 qwen-plus，它通常指向最新的高性能版本
+          temperature: 0.1 # 设置较低的温度，保证结构化输出的稳定性
+      embedding:
+        model: text-embedding-v2  # 官方标准向量模型
+  datasource:
+    url: jdbc:postgresql://localhost:5432/new_career_platfrom
+    username: postgres
+    password: postgres123
+    driver-class-name: org.postgresql.Driver
+  mybatis-plus:
+    configuration:
+      map-underscore-to-camel-case: true  # 自动下划线转驼峰
+
+# ✅ logging 必须顶格写（与 spring 同级）
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.example.newcarre: DEBUG # 建议加上自己项目的包路径
